@@ -22,7 +22,7 @@ async function run() {
     /**
      * Executes the browser actions requested
      */
-    await scrappey.get({
+    const get = await scrappey.get({
         /**
          * Send a GET request
          */
@@ -38,6 +38,8 @@ async function run() {
          */
         "interceptFetchRequest": "https://seatgeek.com/api/event_listings_v2"
     })
+
+    console.log(JSON.stringify(get, undefined, 4))
 
     /**
      * Destroys the session, this will free up space for other users
