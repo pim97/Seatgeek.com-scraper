@@ -34,9 +34,9 @@ async function run() {
         "url": "https://seatgeek.com/knicks-at-celtics-tickets/11-13-2023-boston-massachusetts-td-garden/nba/6119811",
 
         /**
-         * This will intercept requests starting the the url provided and will return the response provided.
-         */
-        "interceptFetchRequest": "https://seatgeek.com/api/event_listings_v2"
+         * Solve Datadome
+        */
+        "datadomeBypass": true
     })
 
     console.log(JSON.stringify(get, undefined, 4))
